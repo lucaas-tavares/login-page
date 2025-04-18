@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark: #010101;
+    --dark-variant: #0D0D0D;
+    --box: #161621;
+    --box-hover: #17171E;
+    --grey: rgb(54, 54, 54, 100%);
+    --light: #ffffff;
+    --primary: #8A3DFF;
+    --secondary: #532499;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+}
+
+#container {
+    background-color: var(--dark-variant);
+    width: 500px;
+    min-height: 450px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#container h1 {
+    color: var(--light);
+    font-size: 25px;
+    padding: 20px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.forms {
+    margin-top: 4%;
+    width: 100%;
+}
+
+#container .forms > p {
+    text-align: initial;
+    margin-left: 8%;
+    color: var(--light);
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+#container .forms p span {
+    color: var(--primary);
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--box);
+    outline: none;
+    font-size: 14px;
+}
+input::placeholder{
+ color: var(--grey);
+}
+
+input:focus {
+    background-color: var(--box-hover);
+}
+
+.forgout p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--grey);
+    cursor: pointer;
+    padding: 5px;
+    text-align: end;
+    margin-right: 50px;
+}
+
+button {
+    width: 84%;
+    padding: 10px;
+    border: none;
+    background-image: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: var(--light);
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:active {
+    background-image: linear-gradient(-90deg, var(--primary), var(--secondary));
+    color: var(--light);
+}
+
+#container > p {
+    color: var(--light);
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 300;
+}
+#container > p a {
+    color: var(--primary);
+    text-decoration: none
+}
